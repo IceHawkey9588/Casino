@@ -5,6 +5,7 @@
 using namespace std;
 
 class Player{
+    private:
     float balance;
     string name;
     string password;
