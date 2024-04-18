@@ -1,24 +1,35 @@
-#include <iostream>
-#include <fstream>
-#include <string>
+#include "Player.h"
 
-using namespace std;
+Player::Player() 
+    : balance(1000), wins(0), losses(0) {}
 
-class Player{
-    private:
-    float balance;
-    string name;
-    string password;
-    public:
-    void Player(string name, string password){
-        this.name = name;
-        this.password = password;
-    }
-    float getBalance(){
-        // todo:
-        // get balance from a saved spreadsheet,
-        // if is a new player give some moner.
-        balance = 5000; // starting moner 5000
-        return balance;
-    }
+Player::Player(int initialBalance, int initialWins, int initialLosses) 
+    : balance(initialBalance), wins(initialWins), losses(initialLosses) {}
+
+int Player::getBalance() const {
+    return balance;
+}
+
+int Player::getWins() const {
+    return wins;
+}
+
+int Player::getLosses() const {
+    return losses;
+}
+
+void Player::increaseBalance(int amount) {
+    balance += amount;
+}
+
+void Player::decreaseBalance(int amount) {
+    balance -= amount;
+}
+
+void Player::incrementWins() {
+    wins++;
+}
+
+void Player::incrementLosses() {
+    losses++;
 }

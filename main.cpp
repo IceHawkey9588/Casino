@@ -1,43 +1,9 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include "Player.h"
 
 using namespace std;
-
-class Player {
-private:
-    int balance=1000;
-    int wins=0;
-    int losses=0;
-
-public:
-    int getBalance() const {
-        return balance;
-    }
-
-    int getWins() const {
-        return wins;
-    }
-
-    int getLosses() const {
-        return losses;
-    }
-
-    void increaseBalance(int amount) {
-        balance += amount;
-    }
-    void decreaseBalance(int amount) {
-        balance -= amount;
-    }
-
-    void incrementWins() {
-        wins++;
-    }
-
-    void incrementLosses() {
-        losses++;
-    }
-};
 
 int main() {
     Player player;
