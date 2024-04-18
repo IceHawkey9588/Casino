@@ -17,7 +17,7 @@ class Player{
     float getBalance(){
         // todo:
         // get balance from a saved spreadsheet,
-        // if is a new player give some moner.
+        // if is a new player give some money.
         balance = 5000; // starting moner 5000
         return balance;
     }
