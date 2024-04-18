@@ -2,5 +2,6 @@
 #include <fstream>
 
 int main(){
-    
+
 }
+

@@ -1,2 +1,2 @@
-# BlackJack
-Simple blackjack practising tool
+# Casino
+Simple Black Jack practising tool
