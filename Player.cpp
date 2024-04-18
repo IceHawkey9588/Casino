@@ -17,6 +17,7 @@ class Player{
         // todo:
         // get balance from a saved spreadsheet,
         // if is a new player give some moner.
+        balance = 5000; // starting moner 5000
         return balance;
     }
 }
