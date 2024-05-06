@@ -8,7 +8,7 @@ CFLAGS = -Wall -Wextra -std=c++11
 TARGET = game
 
 # Source files
-SRCS = Player.cpp main.cpp
+SRCS = Player.cpp DorN.cpp main.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
