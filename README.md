@@ -7,6 +7,6 @@ TODO list:
     - Poker
     - Dices
     - Roulette
-    - Coin flip
+    - Double or Nothing
 - Add currence/balance
 - Add the ability to save your balance for later log in

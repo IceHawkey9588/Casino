@@ -4,12 +4,13 @@
 #include <ctime>
 #include "Player.h"
 
-struct DorN {
+struct DorN
+{
 private:
     Player player;
 
 public:
     DorN(Player player);
     ~DorN();
-    void startGame (Player player);
+    void startGame(Player player);
 };
