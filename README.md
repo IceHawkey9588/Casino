@@ -5,8 +5,9 @@ TODO list:
 - Create games
     - Black Jack
     - Poker
-    - Dices
+    - ~~Dices~~
     - Roulette
-    - Double or Nothing
-- Add currence/balance
-- Add the ability to save your balance for later log in
+    - ~~Double or Nothing~~
+- ~~Add currence/balance~~
+- ~~Add the ability to save your balance for later log in~~
+- **GUI :)**
