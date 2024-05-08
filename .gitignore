@@ -1,0 +1,8 @@
+#VSC folderis
+/.vscode
+
+#.o failai
+*.o
+
+#.exe
+*.exe

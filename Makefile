@@ -8,7 +8,7 @@ CFLAGS = -Wall -Wextra -std=c++11
 TARGET = game
 
 # Source files
-SRCS = Player.cpp DorN.cpp Login.cpp main.cpp
+SRCS = Player.cpp DorN.cpp Login.cpp Dice.cpp main.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
@@ -27,6 +27,13 @@ $(TARGET): $(OBJS)
 # Rebuild target
 rebuild: clean all
 
+# Rebuild target for Linux
+rebuild-lin: clean-lin all
+
 # Clean target
 clean:
 	del -f $(OBJS) $(TARGET).exe
+
+# Clean target for Linux
+clean-lin:
+	rm -f $(OBJS) $(TARGET).exe
