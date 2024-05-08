@@ -6,9 +6,8 @@
 
 using namespace std;
 
-DorN::DorN(Player player)
+DorN::DorN(Player& player)
 {
-    this->player = player;
     startGame(player);
 }
 
@@ -16,17 +15,20 @@ DorN::~DorN()
 {
 }
 
-void DorN::startGame(Player player)
+void DorN::startGame(Player& player)
 {
     string choice;
     int bet;
-    cout << "Welcome to the Double or Nothing game!" << endl;
+    cout << "\nWelcome to the Double or Nothing game!" << endl;
     cout << "Your initial balance is: $" << player.getBalance() << endl;
     while (player.getBalance() > 0)
     {
-        cout << "\nEnter your bet: $";
+        cout << "\nEnter your bet or -1 to exit: $\n";
         cin >> bet;
-        if (bet > player.getBalance())
+        if (bet == -1){
+            return;
+        }
+        else if (bet > player.getBalance())
         {
             cout << "You don't have enough balance to make this bet. Try again." << endl;
             continue;
@@ -56,6 +58,7 @@ void DorN::startGame(Player player)
                 player.increaseBalance(bet);
                 player.incrementWins();
                 cout << "Congratulations! You won. +" << bet << "$!\nYour new balance is: $" << player.getBalance() << endl;
+                
             }
             else
             {

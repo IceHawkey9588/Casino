@@ -8,11 +8,6 @@ using namespace std;
 
 tuple<std::string, double, int, int> Login::getPlayer()
 {
-    int counter = 0, uf = 0;
-    vector<string> names;
-    vector<double> balance;
-    vector<int> wins;
-    vector<int> losses;
     string name;
     ifstream fin("playerData.csv");
     if (!fin)
@@ -22,7 +17,7 @@ tuple<std::string, double, int, int> Login::getPlayer()
     }
 
     string line;
-    getline(fin, line); // Skip header line if present
+    getline(fin, line);
 
     while (getline(fin, line))
     {
@@ -43,7 +38,7 @@ tuple<std::string, double, int, int> Login::getPlayer()
         }
     }
 
-    while(uf!=1){
+    while(true){
         cout << "Enter your username:" << endl;
         cin >> name;
 
@@ -51,10 +46,33 @@ tuple<std::string, double, int, int> Login::getPlayer()
             if(names[i] == name){
                 fin.close();
                 cout << "User found!" << endl;
+                playerNum = i;
                 return std::make_tuple(names[i], balance[i], wins[i], losses[i]);
             }
         }
         cout << "User not found. try again" << endl;
     }
     exit(-1);
+}
+
+void Login::changeCSV(double bet, int additionW, int additionL){
+    balance[playerNum] = bet;
+    wins[playerNum] = additionW;
+    losses[playerNum] = additionL;
+    printList();
+}
+
+void Login::printList(){
+    fstream fin, fout;
+    fout.open("Temp.csv", ios::out);
+    fin.open("playerData.csv", ios::in);
+    fout << "Player,Balance,Wins,Loses" << endl;
+    for(int i = 0; i < counter; i++){
+        fout << names[i] << "," << balance[i] << "," << wins[i] << "," << losses[i] << endl;
+    }
+    fin.close();
+    fout.close();
+
+    remove("playerData.csv");
+    rename("Temp.csv", "playerData.csv");
 }

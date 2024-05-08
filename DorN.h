@@ -6,11 +6,8 @@
 
 struct DorN
 {
-private:
-    Player player;
-
 public:
-    DorN(Player player);
+    DorN(Player& player);
     ~DorN();
-    void startGame(Player player);
+    void startGame(Player& player);
 };

@@ -6,20 +6,19 @@
 
 using namespace std;
 
-Dice::Dice(Player player){
-    this->player = player;
-    startGame();
+Dice::Dice(Player& player){
+    startGame(player);
 }
 
 Dice::~Dice(){
 }
 
-void Dice::startGame(){
+void Dice::startGame(Player& player){
     int bet;
     string choice;
     bool done = false;
 
-    cout << "Welcome to the dice game!" << endl;
+    cout << "\nWelcome to the dice game!" << endl;
     cout << "Your initial balance is: $" << player.getBalance() << endl;
     while (player.getBalance() > 0 && !done)
     {
