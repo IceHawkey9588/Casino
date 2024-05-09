@@ -3,7 +3,7 @@ Simple practising tool meant for fun and as a proof of concept
 
 TODO list:
 - Create games
-    - Black Jack
+    - ~~Black Jack~~
     - Poker
     - ~~Dices~~
     - Roulette
