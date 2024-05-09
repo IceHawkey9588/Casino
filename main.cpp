@@ -7,6 +7,7 @@
 #include "DorN.h"
 #include "Dice.h"
 #include "Login.h"
+#include "BJ.h"
 
 using namespace std;
 
@@ -27,7 +28,7 @@ int main()
             << "6. Get your balance report" << endl;
         cin >> selection;
         if(selection == 1){DorN dorn(player); login.changeCSV(player.getBalance(), player.getWins(), player.getLosses()); }
-        else if(selection == 2){}
+        else if(selection == 2){BJ bj(player);login.changeCSV(player.getBalance(), player.getWins(), player.getLosses());}
         else if(selection == 3){}
         else if(selection == 4){Dice dice(player); login.changeCSV(player.getBalance(), player.getWins(), player.getLosses());}
         else if(selection == 5){}
