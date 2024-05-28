@@ -6,6 +6,14 @@
 #include <tuple>
 using namespace std;
 
+/**
+ * @brief Reads the player data from the CSV file.
+ * 
+ * This function reads the player data from the CSV file and stores it in the respective vectors.
+ * the Player is prompted to enter their username, if the username is not in the names vector
+ * the code repeats until a recognised username is entered.
+ * 
+*/
 tuple<std::string, double, int, int> Login::getPlayer()
 {
     string name;
@@ -55,6 +63,11 @@ tuple<std::string, double, int, int> Login::getPlayer()
     exit(-1);
 }
 
+/**
+ * Changes the CSV according to the input of +- bet which reduces or increases
+ * the Player's account balance. Additionaly increments wins or loses in the csv
+ * file.
+*/
 void Login::changeCSV(double bet, int additionW, int additionL){
     balance[playerNum] = bet;
     wins[playerNum] = additionW;
@@ -62,6 +75,10 @@ void Login::changeCSV(double bet, int additionW, int additionL){
     printList();
 }
 
+/**
+ * Replaces the current csv file with an updated one using vectors of names, balance, wins
+ * and losses.
+*/
 void Login::printList(){
     fstream fin, fout;
     fout.open("Temp.csv", ios::out);

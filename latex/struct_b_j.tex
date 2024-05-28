@@ -1,0 +1,73 @@
+\doxysection{BJ Struct Reference}
+\label{struct_b_j}\index{BJ@{BJ}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ BJ} (\textbf{ Player} \&player)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance of the \doxyref{BJ}{p.}{struct_b_j} class. \end{DoxyCompactList}\item 
+void \textbf{ start\+Game} (\textbf{ Player} \&player)
+\begin{DoxyCompactList}\small\item\em Starts the Black\+Jack game. \end{DoxyCompactList}\item 
+\label{struct_b_j_aa84c8d67842da8f1a280a8e378994134} 
+void {\bfseries rnd\+Card} (int[$\,$], \textbf{ Hand} \&)
+\item 
+\label{struct_b_j_a7914c94ce0f43c19877e27eed78152cb} 
+void {\bfseries give\+Cards} (int[$\,$], \textbf{ Hand} \&, \textbf{ Hand} \&)
+\item 
+\label{struct_b_j_a12dfab6061eb29c155712dbf7b6f360f} 
+void {\bfseries show\+Cards} (\textbf{ Hand} \&, \textbf{ Hand} \&)
+\item 
+\label{struct_b_j_acb30d332530563cd1cb9777ea5c9dcc5} 
+void {\bfseries print\+Card} (int)
+\item 
+\label{struct_b_j_af10cd173592cd9314bbf4dcdd447854a} 
+void {\bfseries calculate\+Score} (\textbf{ Hand} \&)
+\item 
+\label{struct_b_j_ae4df5f792cfcc2e27a11952998a1b5e8} 
+void {\bfseries dealers\+Move} (int[$\,$], \textbf{ Hand} \&, \textbf{ Hand} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{BJ@{BJ}!BJ@{BJ}}
+\index{BJ@{BJ}!BJ@{BJ}}
+\doxysubsubsection{BJ()}
+{\footnotesize\ttfamily \label{struct_b_j_adefe4df92eada76aa8ff78e64eecfadc} 
+BJ\+::\+BJ (\begin{DoxyParamCaption}\item[{\textbf{ Player} \&}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a new instance of the \doxyref{BJ}{p.}{struct_b_j} class. 
+
+This constructor initializes a new instance of the \doxyref{BJ}{p.}{struct_b_j} class and starts the game for the specified player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player object for whom the game is being started. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\index{BJ@{BJ}!startGame@{startGame}}
+\index{startGame@{startGame}!BJ@{BJ}}
+\doxysubsubsection{startGame()}
+{\footnotesize\ttfamily \label{struct_b_j_a2204367179d7666bcf62947aa388364c} 
+void BJ\+::start\+Game (\begin{DoxyParamCaption}\item[{\textbf{ Player} \&}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Starts the Black\+Jack game. 
+
+This function allows the player to play the Black\+Jack game. It takes a reference to a \doxyref{Player}{p.}{class_player} object as a parameter. The function prompts the player to enter their bet, deals the cards, and allows the player to make choices (hit or stand). After the player\textquotesingle{}s turn, the function determines the outcome of the game and updates the player\textquotesingle{}s balance accordingly. The game continues until the player runs out of balance or chooses to quit. At the end of the game, the function displays the total wins and losses of the player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The \doxyref{Player}{p.}{class_player} object representing the player. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+BJ.\+h\item 
+BJ.\+cpp\end{DoxyCompactItemize}

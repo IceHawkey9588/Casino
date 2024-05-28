@@ -6,6 +6,13 @@
 
 using namespace std;
 
+/**
+ * @brief Constructs a new instance of the Dice class.
+ * 
+ * This constructor initializes a new instance of the Dice class and starts the game for the specified player.
+ * 
+ * @param player The player object for whom the game is being started.
+ */
 Dice::Dice(Player& player){
     startGame(player);
 }
@@ -13,6 +20,17 @@ Dice::Dice(Player& player){
 Dice::~Dice(){
 }
 
+/**
+ * Starts the dice game.
+ * 
+ * This function allows the player to play the dice game. It takes a reference to a Player object as a parameter.
+ * The player is prompted to enter their bet and choose what to bet on (red, blue, or tie). The dice are rolled and
+ * the outcome is determined. If the player wins, their balance is increased and the winnings are displayed. If the
+ * player loses, their balance is decreased and a message is displayed. The player can choose to play again or quit
+ * the game.
+ * 
+ * @param player The player object for whom the game is being started.
+ */
 void Dice::startGame(Player& player){
     int bet;
     string choice;

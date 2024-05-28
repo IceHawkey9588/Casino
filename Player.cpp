@@ -1,6 +1,9 @@
 #include "Player.h"
 #include <string>
 
+/**
+ * @brief Player class to store player data of balance, wins and losses.
+*/
 Player::Player()
     : balance(1000), wins(0), losses(0) {}
 

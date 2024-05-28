@@ -6,6 +6,13 @@
 
 using namespace std;
 
+/**
+ * @brief Constructs a new instance of the DorN (Double or nothing) class.
+ * 
+ * This constructor initializes a new instance of the DorN class and starts the game for the specified player.
+ * 
+ * @param player The player object for whom the game is being started.
+ */
 DorN::DorN(Player& player)
 {
     startGame(player);
@@ -15,6 +22,17 @@ DorN::~DorN()
 {
 }
 
+/**
+ * Starts the Double or Nothing game.
+ * 
+ * This function allows the player to play the Double or Nothing game.
+ * The player is prompted to enter their bet and choose heads or tails.
+ * The outcome is determined randomly, and the player's balance is updated accordingly.
+ * The game continues until the player's balance reaches zero or the player chooses to exit.
+ * At the end of the game, the total number of wins and losses is displayed.
+ * 
+ * @param player The player object for whom the game is being started.
+ */
 void DorN::startGame(Player& player)
 {
     string choice;

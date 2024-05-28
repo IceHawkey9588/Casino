@@ -9,8 +9,11 @@
 #include "Login.h"
 #include "BJ.h"
 
-using namespace std;
 
+using namespace std;
+/**
+ * @brief main code to test out the games and for user navigation.
+*/
 int main()
 {
     int selection;

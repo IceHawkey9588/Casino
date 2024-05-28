@@ -6,6 +6,14 @@
 #include "Hand.h"
 
 using namespace std;
+
+/**
+ * @brief Constructs a new instance of the BJ class.
+ * 
+ * This constructor initializes a new instance of the BJ class and starts the game for the specified player.
+ * 
+ * @param player The player object for whom the game is being started.
+ */
 BJ::BJ(Player& player)
 {
     startGame(player);
@@ -15,6 +23,17 @@ BJ::~BJ()
 {
 }
 
+/**
+ * @brief Starts the BlackJack game.
+ * 
+ * This function allows the player to play the BlackJack game. It takes a reference to a Player object as a parameter.
+ * The function prompts the player to enter their bet, deals the cards, and allows the player to make choices (hit or stand).
+ * After the player's turn, the function determines the outcome of the game and updates the player's balance accordingly.
+ * The game continues until the player runs out of balance or chooses to quit.
+ * At the end of the game, the function displays the total wins and losses of the player.
+ * 
+ * @param player The Player object representing the player.
+ */
 void BJ::startGame(Player& player)
 {
     string choice;
@@ -26,7 +45,6 @@ void BJ::startGame(Player& player)
     cout << "Your initial balance is: $" << player.getBalance() << endl;
     while (player.getBalance() > 0)
     {
-        
         Hand client;
         Hand dealer;
         cout << "\nEnter your bet: $";

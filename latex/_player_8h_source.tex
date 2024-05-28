@@ -1,0 +1,38 @@
+\doxysection{Player.\+h}
+\label{_player_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLAYER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }Player\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ Player();}
+\DoxyCodeLine{00009\ \ \ \ \ Player(std::string\ initialName,\ \textcolor{keywordtype}{int}\ initialBalance,\ \textcolor{keywordtype}{int}\ initialWins,\ \textcolor{keywordtype}{int}\ initialLosses);}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ getBalance()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ getWins()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ getLosses()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ getName()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ std::string\&\ newName);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ setBalance(\textcolor{keywordtype}{int}\ newBalance);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ setWins(\textcolor{keywordtype}{int}\ newWins);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ setLosses(\textcolor{keywordtype}{int}\ newLosses);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ increaseBalance(\textcolor{keywordtype}{int}\ amount);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ decreaseBalance(\textcolor{keywordtype}{int}\ amount);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ incrementWins();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ incrementLosses();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ balance;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ wins;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ losses;}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

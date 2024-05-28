@@ -1,0 +1,42 @@
+\doxysection{Login Struct Reference}
+\label{struct_login}\index{Login@{Login}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple$<$ std\+::string, double, int, int $>$ \textbf{ get\+Player} ()
+\begin{DoxyCompactList}\small\item\em Reads the player data from the CSV file. \end{DoxyCompactList}\item 
+void \textbf{ change\+CSV} (double bet, int additionW, int additionL)
+\item 
+void \textbf{ print\+List} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\index{Login@{Login}!changeCSV@{changeCSV}}
+\index{changeCSV@{changeCSV}!Login@{Login}}
+\doxysubsubsection{changeCSV()}
+{\footnotesize\ttfamily \label{struct_login_a3901a49a0248bc9a7b2eb05fd0f57b6a} 
+void Login\+::change\+CSV (\begin{DoxyParamCaption}\item[{double}]{bet}{, }\item[{int}]{additionW}{, }\item[{int}]{additionL}{}\end{DoxyParamCaption})}
+
+Changes the CSV according to the input of +-\/ bet which reduces or increases the \doxyref{Player}{p.}{class_player}\textquotesingle{}s account balance. Additionaly increments wins or loses in the csv file. \index{Login@{Login}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!Login@{Login}}
+\doxysubsubsection{getPlayer()}
+{\footnotesize\ttfamily \label{struct_login_a08086bb52b4368b53068a0ce2db9d149} 
+tuple$<$ std\+::string, double, int, int $>$ Login\+::get\+Player (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads the player data from the CSV file. 
+
+This function reads the player data from the CSV file and stores it in the respective vectors. the \doxyref{Player}{p.}{class_player} is prompted to enter their username, if the username is not in the names vector the code repeats until a recognised username is entered. \index{Login@{Login}!printList@{printList}}
+\index{printList@{printList}!Login@{Login}}
+\doxysubsubsection{printList()}
+{\footnotesize\ttfamily \label{struct_login_afe0bdee81b79e7f1adf929fe842485e0} 
+void Login\+::print\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Replaces the current csv file with an updated one using vectors of names, balance, wins and losses. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Login.\+h\item 
+Login.\+cpp\end{DoxyCompactItemize}
