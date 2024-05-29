@@ -47,6 +47,10 @@ Actual working principle:
 
 # Program working documentation
 
+LFF (Time logging):
+
+![App Platorm]([https://i.imgur.com/TFQfNTB.png](https://i.imgur.com/Rm6ha2V.png))
+
 The full documentation is available in the `dokumentacija.pdf` file with descriptions.
 
 TODO list:
