@@ -25,6 +25,16 @@ After successful login you can select one of the following options:
 
     Writes out currently available balance to the player.
 
+# Project ideas and realisation
+
+Projected app working principle:
+![App Platorm](https://i.imgur.com/RzxE3Pd.png)
+
+
+Actual working principle:
+![App Platorm](https://i.imgur.com/TFQfNTB.png)
+
+
 # Program working documentation
 
 The full documentation is available in the `dokumentacija.pdf` file with descriptions.
