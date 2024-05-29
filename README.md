@@ -42,8 +42,6 @@ Video Demo:
 
 The full documentation is available in the `dokumentacija.pdf` file with descriptions.
 
-The working principle is shown it he picture below:
-
 
 
 
