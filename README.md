@@ -28,24 +28,26 @@ After successful login you can select one of the following options:
 # Project ideas and realisation
 
 Projected app working principle:
+
 ![App Platorm](https://i.imgur.com/RzxE3Pd.png)
 
 
 Actual working principle:
+
 ![App Platorm](https://i.imgur.com/TFQfNTB.png)
 
 ***old*** Video Demo:
 
 [![IMAGE_ALT](https://img.youtube.com/vi/aK-zYPDWDHM/0.jpg)](https://www.youtube.com/watch?v=aK-zYPDWDHM&feature=youtu.be&themeRefresh=1)
 
+
+***new*** Video Demo:
+
+[![IMAGE_ALT](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](Video Link)
+
 # Program working documentation
 
 The full documentation is available in the `dokumentacija.pdf` file with descriptions.
-
-
-
-
-
 
 TODO list:
 - Create games
