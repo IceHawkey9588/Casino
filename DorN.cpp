@@ -50,6 +50,10 @@ void DorN::startGame(Player& player)
         {
             cout << "You don't have enough balance to make this bet. Try again." << endl;
             continue;
+        } else if (bet < 1)
+        {
+            cout << "Invalid bet. Please enter a positive amount." << endl;
+            continue;
         }
         cout << "Choose heads or tails:";
         cin >> choice;

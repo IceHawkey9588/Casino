@@ -46,6 +46,10 @@ void Dice::startGame(Player& player){
         {
             cout << "You don't have enough balance to make this bet. Try again." << endl;
             continue;
+        } else if (bet < 1)
+        {
+            cout << "Invalid bet. Please enter a positive amount." << endl;
+            continue;
         }
         cout << "Choose what to bet on: red, blue or tie:" << endl;
         cin >> choice;
