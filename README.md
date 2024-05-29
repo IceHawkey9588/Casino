@@ -34,16 +34,6 @@ Projected app working principle:
 Actual working principle:
 ![App Platorm](https://i.imgur.com/TFQfNTB.png)
 
-<iframe
-  width="640"
-  height="480"
-  src="https://www.youtube.com/watch?v=aK-zYPDWDHM&feature=youtu.be&themeRefresh=1"
-  frameborder="0"
-  allow="autoplay; encrypted-media"
-  allowfullscreen
->
-</iframe>
-
 # Program working documentation
 
 The full documentation is available in the `dokumentacija.pdf` file with descriptions.
